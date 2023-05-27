@@ -31,7 +31,7 @@ path = '/content'
 os.chdir(path)
 
 # To download monthly data
-run = CC.CODiS_crawler(stations, data_type = 'month', year_list = years)
+run = CODiS_crawler(stations, data_type = 'month', year_list = years)
 ```
 ## Check period without data in each station
 The folder structure of the downloaded CSV:<br>
