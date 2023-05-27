@@ -30,8 +30,14 @@ from CODiS_crawler.CODiS_crawler import CODiS_crawler
 path = '/content'
 os.chdir(path)
 
-# Crawling...
-run = CODiS_crawler(stations, data_type = 'month', year_list = years) # Crawl monthly report
+# To download yearly data
+run = CC.CODiS_crawler(stations, data_type = 'year', year_list = years)
+
+# To download monthly data
+run = CC.CODiS_crawler(stations, data_type = 'month', year_list = years)
+
+# To download daily data
+run = CC.CODiS_crawler(stations, data_type = 'day', year_list = years)
 ```
 ## Check period without data in each station
 The folder structure of the downloaded CSV:<br>
