@@ -41,7 +41,8 @@ data/<br>
 &emsp;&emsp;&emsp;&emsp;├─ month/<br>
 &emsp;&emsp;&emsp;&emsp;└─ day/<br>
 
-Each data type folder contains a text file named `no_data.txt` that indicates the periods when the data is absent.
+In the folder of each station contains folders for each data type.
+Each data type folder contains a text file named `no_data.txt` that contains the periods when the data is absent.
 
 <div>
    <a href="https://colab.research.google.com/drive/1iH8FdF3JS2wzl3mwjKcS1TegipWaUYFn?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
