@@ -34,13 +34,15 @@ os.chdir(path)
 run = CODiS_crawler(stations, data_type = 'month', year_list = years)
 ```
 ## Check period without data in each station
-The folder structure of the downloaded CSV:<br>
-data/<br>
-&ensp;└─ station id/<br>
-&emsp;&emsp;&emsp;&emsp;├─ year/<br>
-&emsp;&emsp;&emsp;&emsp;├─ month/<br>
-&emsp;&emsp;&emsp;&emsp;└─ day/<br>
+The folder structure of the downloaded CSV:
 
+     data/
+       |-------- station id/
+                     |
+                     | ----- year/
+                     | ----- month/
+                     | ----- day/
+                     
 In the folder of each station contains folders for each data type.
 Each data type folder contains a text file named `no_data.txt` that contains the periods when the data is absent.
 
